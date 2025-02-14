@@ -1,0 +1,4 @@
+bei
+A  bar.txt
+A  foo.txt
+ist nun ein A vorne drann.

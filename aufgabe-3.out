@@ -1,0 +1,6 @@
+$ git status --short
+?? bar.txt
+?? foo.txt
+?? hello-git/
+?? m426-hello-git/
+?? qux.txt
