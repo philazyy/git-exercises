@@ -1,0 +1,23 @@
+PS C:\Users\philh\git-exercises> git log --oneline -n 5
+cb25385 (HEAD -> main) aufgabe 9 & 10
+253ea73 (origin/main) Add the rest
+10f8772 Add foo.txt & bar.txt
+
+
+
+PS C:\Users\philh\git-exercises> git log --author="phil"
+commit cb2538563fca6f1b1fa17737a19dd60063b22623 (HEAD -> main)
+Author: PHIL HÄGELI <phil.haegeli8@gmail.com>
+Date:   Fri Feb 21 13:22:40 2025 +0100
+
+    aufgabe 9 & 10
+
+commit 253ea7374b67f0e76c5cb304f019b69947371a1e (origin/main)
+Author: PHIL HÄGELI <phil.haegeli8@gmail.com>
+Date:   Fri Feb 14 13:02:40 2025 +0100
+
+    Add the rest
+
+commit 10f8772d01f62d874a55e04eda92887ec11e65b2
+Author: PHIL HÄGELI <phil.haegeli8@gmail.com>
+Date:   Fri Feb 14 12:59:58 2025 +0100

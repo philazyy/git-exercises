@@ -10,3 +10,55 @@ PS C:\Users\philh\git-exercises> rm foo.txt
 PS C:\Users\philh\git-exercises> git status --short
 D  bar.txt
  D foo.txt
+
+Wieder herstellen:
+
+C:\Users\philh\git-exercises> git status --short
+D  bar.txt
+ D foo.txt
+?? aufgabe-10.txt
+?? foobar.exe
+PS C:\Users\philh\git-exercises> git checkout bar.txt
+error: pathspec 'bar.txt' did not match any file(s) known to git
+PS C:\Users\philh\git-exercises> git checkout foo.txt
+Updated 1 path from the index
+PS C:\Users\philh\git-exercises> git status --short
+D  bar.txt
+?? aufgabe-10.txt
+?? foobar.exe
+PS C:\Users\philh\git-exercises> git checkout HEAD -- bar.txt
+PS C:\Users\philh\git-exercises> git status --short
+?? aufgabe-10.txt
+?? foobar.exe
+PS C:\Users\philh\git-exercises> ls
+
+
+    Verzeichnis: C:\Users\philh\git-exercises
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        14.02.2025     12:42                hello-git
+d-----        14.02.2025     12:43                m426-hello-git
+-a----        21.02.2025     13:16            292 aufgabe-10.txt
+-a----        14.02.2025     12:54             55 aufgabe-3-4-diff.txt
+
+Umbenennen:
+
+PS C:\Users\philh\git-exercises> mv bar.txt eneas.txt
+PS C:\Users\philh\git-exercises> git status --short
+ D bar.txt
+?? aufgabe-10.txt
+?? eneas.txt
+?? foobar.exe
+PS C:\Users\philh\git-exercises> git mv foo.txt tim.txt
+PS C:\Users\philh\git-exercises> git status --short
+ D bar.txt
+R  foo.txt -> tim.txt
+?? aufgabe-10.txt
+?? eneas.txt
+?? foobar.exe
+PS C:\Users\philh\git-exercises>
+
+Ich bevorzuge git mv!!!
+
