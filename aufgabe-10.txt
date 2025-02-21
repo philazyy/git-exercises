@@ -1,0 +1,12 @@
+Aufgabe 10:
+löschen mit git rm:
+PS C:\Users\philh\git-exercises> git rm bar.txt
+rm 'bar.txt'
+PS C:\Users\philh\git-exercises> git status --short
+D  bar.txt
+
+löschen mit rm:
+PS C:\Users\philh\git-exercises> rm foo.txt
+PS C:\Users\philh\git-exercises> git status --short
+D  bar.txt
+ D foo.txt
